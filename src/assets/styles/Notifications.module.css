@@ -1,0 +1,58 @@
+/* Main container styling */
+.container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Set a max width for better layout */
+  margin: auto; 
+}
+
+/* Notification styling */
+.notification {
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  display: flex; /* Flexbox for alignment */
+  align-items: center; /* Center vertically */
+  font-size: 16px; /* Font size for better readability */
+  position: relative;
+  border: 5px solid red;/* Center the container */
+  /* For positioning the close button */
+}
+
+/* Different types of notifications */
+.notification.success {
+  background-color: #e6f7e6; /* Light green background */
+  border: 1px solid #4caf50; /* Green border */
+  color: #4caf50; /* Green text */
+}
+
+.notification.error {
+  background-color: #f8d7da; /* Light red background */
+  border: 1px solid #f44336; /* Red border */
+  color: #f44336; /* Red text */
+}
+
+.notification.info {
+  background-color: #eaf1ff; /* Light blue background */
+  border: 1px solid #2196f3; /* Blue border */
+  color: #2196f3; /* Blue text */
+}
+
+/* Close button styling */
+.notification .close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 18px; /* Larger for better visibility */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.notification .close:hover {
+  color: #999; /* Slight change on hover for feedback */
+}

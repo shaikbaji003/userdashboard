@@ -1,0 +1,63 @@
+.navbar {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .navbar-links {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .navbar-btn, .logout-btn {
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .logout-btn {
+    background-color: red;
+    color: white;
+  }
+  .navbar-btn, .logout-btn {
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 10px 16px; /* Increased padding for a more comfortable feel */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .navbar-btn:hover,
+  .navbar-btn:focus,
+  .logout-btn:hover,
+  .logout-btn:focus {
+    background-color: #e0e0e0; /* Light gray on hover for buttons */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .logout-btn {
+    background-color: red;
+    color: white;
+  }
+  
+  .logout-btn:hover,
+  .logout-btn:focus {
+    background-color: darkred; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  

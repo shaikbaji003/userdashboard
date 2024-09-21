@@ -1,0 +1,118 @@
+/* Container for the entire page */
+.container {
+    padding: 20px;
+    width: 100%;
+    background-color: white; /* White background */
+    min-height: 100vh;
+  }
+  
+  /* Top section for search and sort fields */
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: white; /* Light grey background for contrast */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .sortSelect {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* User list section */
+  .userListSection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* User cards */
+  .userCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .userCard {
+    flex: 1 1 calc(33.33% - 20px);
+    display: flex;
+    align-items: center;
+    background-color: white; /* White background for cards */
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .userCard:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .userImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+  }
+  
+  .userInfo {
+    flex: 1;
+  }
+  
+  .userInfo h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .userInfo p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  /* Actions (edit and delete buttons) */
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .actions button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007bff; /* Blue background for buttons */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* No user message */
+  .noUser {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: red;
+  }
+  

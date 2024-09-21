@@ -1,0 +1,115 @@
+/* Container to center the navigation card on the screen */
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8; /* Soft background color for contrast */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Main navigation card */
+.nav {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 12px; /* Slightly larger border radius */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow for elevation */
+  padding: 50px; /* Increased padding for a spacious feel */
+  width: 100%;
+  max-width: 600px; /* Adjusted max width for balance */
+  height: auto; /* Allow height to be determined by content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Reduced gap for a tighter layout */
+}
+
+/* Dashboard title styling */
+.dashboardTitle {
+  color: #007bff; /* Bright blue for visibility */
+  padding: 15px 25px; /* Padding adjusted for balance */
+  border-radius: 8px; /* Softer corners */
+  font-size: 32px; /* Slightly smaller font size */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Reduced gap for a cleaner look */
+  width: 100%;
+  align-items: center;
+}
+
+/* Default link styling */
+.link {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Adjusted font size */
+  padding: 12px 20px; /* More balanced padding */
+  width: 90%; /* Adjusted width */
+  text-align: center;
+  border: 2px solid #007bff; /* Blue border for links */
+  border-radius: 8px; /* Softer corners */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Active link styling */
+.activeLink {
+  background-color: #007bff; /* Active background color */
+  color: #ffffff; /* White text for contrast */
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 12px 20px; /* More balanced padding */
+  width: 90%; /* Adjusted width */
+  text-align: center;
+  text-decoration: none; /* Ensure no underline */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for links */
+.link:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: #ffffff; /* White text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav {
+      padding: 30px; /* Adjusted padding for smaller screens */
+  }
+
+  .dashboardTitle {
+      font-size: 26px; /* Reduced font size */
+  }
+
+  .link, .activeLink {
+      font-size: 18px; /* Adjusted font size */
+      width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media (max-width: 499px) {
+  .nav {
+      padding: 20px; /* Further reduced padding for mobile */
+  }
+
+  .navLinks {
+      flex-direction: column; /* Keep column layout */
+  }
+
+  .dashboardTitle {
+      font-size: 22px; /* Further reduced font size */
+      padding: 10px 15px; /* Adjusted padding */
+  }
+
+  .link, .activeLink {
+      font-size: 16px; /* Consistent font size */
+      width: auto; /* Let links take smaller widths */
+      padding: 10px; /* Consistent padding */
+  }
+}

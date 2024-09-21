@@ -1,0 +1,21 @@
+.Container {
+  width: 100%;
+  gap: 20px;
+  min-height: 100vh;
+  /* border:2px dashed red; */
+  padding: 4px;
+}
+
+.left-menu {
+  width: 20%;
+}
+
+.dashboard {
+  width: calc(100% - 20%);
+}
+@media (max-width: 499px) {
+  .Container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
